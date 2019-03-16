@@ -10,3 +10,8 @@
 - 新建文章 `hexo new page "文章名"`
 - 清空缓存 `hexo clean`
 - 部署 `hexo deploy --generate`
+
+
+### 链接
+- [hexo](https://hexo.io)
+- [next主题](http://theme-next.iissnan.com/)
