@@ -1,4 +1,6 @@
 
+[访问](https://ty850454.github.io/blog/)
+
 
 ### 环境准备
 1. clone 代码
