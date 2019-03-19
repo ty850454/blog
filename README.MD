@@ -16,4 +16,4 @@
 
 ### 链接
 - [hexo](https://hexo.io)
-- [next主题](http://theme-next.iissnan.com/)
+- [next主题GitHub](https://github.com/theme-next/hexo-theme-next)
