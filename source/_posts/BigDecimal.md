@@ -32,6 +32,17 @@ System.out.println(bigDecimal1.multiply(bigDecimal2));
 System.out.println(bigDecimal1.divide(bigDecimal2, 4, RoundingMode.HALF_UP));
 ```
 
+#### RoundingMode
+header 1 | header 2
+---|---
+ROUND_CEILING | 如果 BigDecimal 是正的，则做 ROUND_UP 操作；如果为负，则做 ROUND_DOWN 操作。
+ROUND_DOWN | 从不在舍弃(即截断)的小数之前增加数字。
+ROUND_FLOOR | 如果 BigDecimal 为正，则作 ROUND_UP ；如果为负，则作 ROUND_DOWN 。
+ROUND_HALF_DOWN|若舍弃部分> .5，则作 ROUND_UP；否则，作 ROUND_DOWN 。
+ROUND_HALF_EVEN|如果舍弃部分左边的数字为奇数，则作 ROUND_HALF_UP ；如果它为偶数，则作 ROUND_HALF_DOWN 。
+HALF_UP | 若舍弃部分>=.5，则作 ROUND_UP ；否则，作 ROUND_DOWN 。
+ROUND_UNNECESSARY|该“伪舍入模式”实际是指明所要求的操作必须是精确的，，因此不需要舍入操作。
+ROUND_UP|总是在非 0 舍弃小数(即截断)之前增加数字。
 
 ## 为什么要用 BigDecimal
 
