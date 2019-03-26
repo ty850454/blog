@@ -2,14 +2,23 @@
 
 
 
+
+
+
+
+
+
+
+
+
   
 
 
-<html class="theme-next pisces use-motion" lang="zh-Hans">
+<html class="theme-next pisces use-motion" lang="zh-CN">
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
 
 
@@ -20,8 +29,6 @@
 
 
 
-<meta http-equiv="Cache-Control" content="no-transform">
-<meta http-equiv="Cache-Control" content="no-siteapp">
 
 
 
@@ -38,9 +45,22 @@
 
 
 
-  
-  
-  <link href="/blog/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+<link rel="stylesheet" href="/blog/lib/font-awesome/css/font-awesome.min.css?v=4.6.2">
+
+<link rel="stylesheet" href="/blog/css/main.css?v=7.0.1">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/blog/images/apple-touch-icon-next.png?v=7.0.1">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/blog/images/favicon-32x32-next.png?v=7.0.1">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/blog/images/favicon-16x16-next.png?v=7.0.1">
+
+
+  <link rel="mask-icon" href="/blog/images/logo.svg?v=7.0.1" color="#222">
 
 
 
@@ -48,61 +68,18 @@
 
 
 
-<link href="/blog/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
-
-<link href="/blog/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
-
-
-  <link rel="apple-touch-icon" sizes="180x180" href="/blog/images/apple-touch-icon-next.png?v=5.1.4">
-
-
-  <link rel="icon" type="image/png" sizes="32x32" href="/blog/images/favicon-32x32-next.png?v=5.1.4">
-
-
-  <link rel="icon" type="image/png" sizes="16x16" href="/blog/images/favicon-16x16-next.png?v=5.1.4">
-
-
-  <link rel="mask-icon" href="/blog/images/logo.svg?v=5.1.4" color="#222">
-
-
-
-
-
-  <meta name="keywords" content="Hexo, NexT">
-
-
-
-
-
-
-
-
-
-
-<meta property="og:type" content="website">
-<meta property="og:title" content="ty850 笔记">
-<meta property="og:url" content="http://yoursite.com/index.html">
-<meta property="og:site_name" content="ty850 笔记">
-<meta property="og:locale" content="zh-Hans">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="ty850 笔记">
-
-
-
-<script type="text/javascript" id="hexo.configurations">
+<script id="hexo.configurations">
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/blog/',
     scheme: 'Pisces',
-    version: '5.1.4',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
-    fancybox: true,
+    version: '7.0.1',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":true,"onmobile":false,"dimmer":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
     tabs: true,
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
-    duoshuo: {
-      userId: '0',
-      author: '博主'
-    },
     algolia: {
       applicationID: '',
       apiKey: '',
@@ -114,12 +91,33 @@
 </script>
 
 
+  
+
+
+
+
+  <meta property="og:type" content="website">
+<meta property="og:title" content="ty850 笔记">
+<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:site_name" content="ty850 笔记">
+<meta property="og:locale" content="zh-CN">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="ty850 笔记">
+
+
+
+
+
 
   <link rel="canonical" href="http://yoursite.com/">
 
 
 
-
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
 
   <title>ty850 笔记</title>
   
@@ -131,9 +129,38 @@
 
 
 
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .motion-element,
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-title { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
 
   
   
@@ -146,7 +173,7 @@
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-wrapper">
-  <div class="site-meta ">
+  <div class="site-meta">
     
 
     <div class="custom-logo-site-title">
@@ -156,13 +183,16 @@
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
+    
       
         <p class="site-subtitle">实践是检验真理的唯一标准</p>
       
+    
+    
   </div>
 
   <div class="site-nav-toggle">
-    <button>
+    <button aria-label="切换导航栏">
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
       <span class="btn-bar"></span>
@@ -170,55 +200,86 @@
   </div>
 </div>
 
-<nav class="site-nav">
-  
 
+
+<nav class="site-nav">
   
     <ul id="menu" class="menu">
       
         
-        <li class="menu-item menu-item-home">
-          <a href="/blog/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
-            
-            首页
-          </a>
-        </li>
-      
         
-        <li class="menu-item menu-item-tags">
-          <a href="/blog/tags/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
-            
-            标签
-          </a>
-        </li>
-      
         
-        <li class="menu-item menu-item-categories">
-          <a href="/blog/categories/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
-            
-            分类
-          </a>
-        </li>
+          
+          <li class="menu-item menu-item-home">
+
+    
+    
+    
       
+    
+
+    
+
+    <a href="/blog/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
+
+  </li>
         
-        <li class="menu-item menu-item-archives">
-          <a href="/blog/archives/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
-            
-            归档
-          </a>
-        </li>
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+
+    
+    
+    
       
+    
+
+    
+
+    <a href="/blog/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-categories">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/blog/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/blog/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
+
+  </li>
 
       
+      
     </ul>
+  
+
   
 
   
@@ -226,12 +287,23 @@
 
 
 
- </div>
+  
+
+
+
+</div>
     </header>
+
+    
+
 
     <main id="main" class="main">
       <div class="main-inner">
         <div class="content-wrap">
+          
+            
+
+          
           <div id="content" class="content">
             
   <section id="posts" class="posts-expand">
@@ -244,12 +316,14 @@
   
   
 
+  
+
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/blog/2019/03/18/spring-boot注解/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/blog/2019/03/26/转-【架构师成长必备】如何阅读一个开源项目的源码？【石杉的架构笔记】/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="ty850">
@@ -268,11 +342,20 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/blog/2019/03/18/spring-boot注解/" itemprop="url">spring boot注解</a></h1>
+                
+                <a href="/blog/2019/03/26/转-【架构师成长必备】如何阅读一个开源项目的源码？【石杉的架构笔记】/" class="post-title-link" itemprop="url">[转]【架构师成长必备】如何阅读一个开源项目的源码？【石杉的架构笔记】</a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
@@ -280,52 +363,25 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-03-18T15:43:12+08:00">
-                2019-03-18
-              </time>
+
+              
+                
+              
+
+              <time title="创建时间：2019-03-26 20:07:21 / 修改时间：20:15:19" itemprop="dateCreated datePublished" datetime="2019-03-26T20:07:21+08:00">2019-03-26</time>
             
 
             
+              
 
+              
             
           </span>
 
           
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/blog/categories/转载/" itemprop="url" rel="index">
-                    <span itemprop="name">转载</span>
-                  </a>
-                </span>
-
-                
-                
-                  ， 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/blog/categories/转载/技术文档/" itemprop="url" rel="index">
-                    <span itemprop="name">技术文档</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
 
           
+            
             
           
 
@@ -352,28 +408,35 @@
 
       
         
-          
-          
-本文原创首发于微信公众号：Java技术栈（id:javastack），关注公众号在后台回复 “boot” 可获取更多，转载请原样保留本信息。
-
-@SpringBootApplication这是 Spring Boot 最最最核心的注解，用在 Spring Boot 主类上，标识这是一个 Sprin
-          ...
+          <p>这篇文章，给大家简单介绍一下很多同学都非常关心的一个问题：如何阅读一个开源项目的源码。</p>
+<p>我相信很多同学都希望能够去阅读一些源码来提升自己的技术水平，毕竟在面试的时候，很多大厂都经常会扣到非常深入的底层源码。</p>
+<blockquote>
+<p><strong>原文作者：</strong> 掘金用户 石杉的架构笔记<br><strong>原文链接：</strong> <a href="https://juejin.im/post/5c97b1876fb9a0711103dbb2" target="_blank" rel="noopener">https://juejin.im/…</a></p>
+</blockquote>
           <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/blog/2019/03/18/spring-boot注解/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/blog/2019/03/26/转-【架构师成长必备】如何阅读一个开源项目的源码？【石杉的架构笔记】/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
           <!--/noindex-->
         
       
     </div>
+
+    
+
     
     
     
 
     
 
+    
+      
+    
     
 
     
@@ -404,6 +467,1191 @@
 
   
   
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/blog/2019/03/19/快速提高自己的拍摄水平/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="ty850">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/blog/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ty850 笔记">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/blog/2019/03/19/快速提高自己的拍摄水平/" class="post-title-link" itemprop="url">快速提高自己的拍摄水平</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-03-19 15:17:34 / 修改时间：15:30:46" itemprop="dateCreated datePublished" datetime="2019-03-19T15:17:34+08:00">2019-03-19</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/blog/categories/摄影/" itemprop="url" rel="index"><span itemprop="name">摄影</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <a id="more"></a>
+<h3 id="1-阅读相机使用说明书"><a href="#1-阅读相机使用说明书" class="headerlink" title="1. 阅读相机使用说明书"></a>1. 阅读相机使用说明书</h3><h3 id="2-制定摄影计划"><a href="#2-制定摄影计划" class="headerlink" title="2. 制定摄影计划"></a>2. 制定摄影计划</h3><p>制定一个摄影计划除了有助于提高自己的摄影水平及审美水平外，还能迫使我们最大的限度地利用现有的设备。</p>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/blog/2019/03/19/Java内存模型/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="ty850">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/blog/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ty850 笔记">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/blog/2019/03/19/Java内存模型/" class="post-title-link" itemprop="url">Java内存模型</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-03-19 00:26:51 / 修改时间：00:40:04" itemprop="dateCreated datePublished" datetime="2019-03-19T00:26:51+08:00">2019-03-19</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/blog/categories/技术文档/" itemprop="url" rel="index"><span itemprop="name">技术文档</span></a></span>
+
+                
+                
+                  ，
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/blog/categories/技术文档/java语言/" itemprop="url" rel="index"><span itemprop="name">java语言</span></a></span>
+
+                
+                
+                  ，
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/blog/categories/技术文档/java语言/java/" itemprop="url" rel="index"><span itemprop="name">java</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <a id="more"></a>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/blog/2019/03/19/ClassLoader/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="ty850">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/blog/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ty850 笔记">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/blog/2019/03/19/ClassLoader/" class="post-title-link" itemprop="url">ClassLoader</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-03-19 00:26:36 / 修改时间：00:40:05" itemprop="dateCreated datePublished" datetime="2019-03-19T00:26:36+08:00">2019-03-19</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/blog/categories/技术文档/" itemprop="url" rel="index"><span itemprop="name">技术文档</span></a></span>
+
+                
+                
+                  ，
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/blog/categories/技术文档/java语言/" itemprop="url" rel="index"><span itemprop="name">java语言</span></a></span>
+
+                
+                
+                  ，
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/blog/categories/技术文档/java语言/java/" itemprop="url" rel="index"><span itemprop="name">java</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <a id="more"></a>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/blog/2019/03/19/BigDecimal/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="ty850">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/blog/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ty850 笔记">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/blog/2019/03/19/BigDecimal/" class="post-title-link" itemprop="url">BigDecimal</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-03-19 00:04:35" itemprop="dateCreated datePublished" datetime="2019-03-19T00:04:35+08:00">2019-03-19</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-03-20 11:06:04" itemprop="dateModified" datetime="2019-03-20T11:06:04+08:00">2019-03-20</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/blog/categories/技术文档/" itemprop="url" rel="index"><span itemprop="name">技术文档</span></a></span>
+
+                
+                
+                  ，
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/blog/categories/技术文档/java语言/" itemprop="url" rel="index"><span itemprop="name">java语言</span></a></span>
+
+                
+                
+                  ，
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/blog/categories/技术文档/java语言/java/" itemprop="url" rel="index"><span itemprop="name">java</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <a id="more"></a>
+<h2 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h2><h2 id="快速开始"><a href="#快速开始" class="headerlink" title="快速开始"></a>快速开始</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">BigDecimal bigDecimal1 = <span class="keyword">new</span> BigDecimal(<span class="number">1</span>);</span><br><span class="line">BigDecimal bigDecimal2 = <span class="keyword">new</span> BigDecimal(<span class="number">2</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 加法 bigDecimal1.add(bigDecimal2)</span></span><br><span class="line">System.out.println(bigDecimal1.add(bigDecimal2));</span><br><span class="line"></span><br><span class="line"><span class="comment">// 减法 bigDecimal1.subtract(bigDecimal2)</span></span><br><span class="line">System.out.println(bigDecimal1.subtract(bigDecimal2));</span><br><span class="line"></span><br><span class="line"><span class="comment">// 乘法 bigDecimal1.multiply(bigDecimal2)</span></span><br><span class="line">System.out.println(bigDecimal1.multiply(bigDecimal2));</span><br><span class="line"></span><br><span class="line"><span class="comment">// 除法 bigDecimal1.divide(bigDecimal2, 4, RoundingMode.HALF_UP)</span></span><br><span class="line">System.out.println(bigDecimal1.divide(bigDecimal2, <span class="number">4</span>, RoundingMode.HALF_UP));</span><br></pre></td></tr></table></figure>
+<h4 id="RoundingMode"><a href="#RoundingMode" class="headerlink" title="RoundingMode"></a>RoundingMode</h4><table>
+<thead>
+<tr>
+<th>header 1</th>
+<th>header 2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ROUND_CEILING</td>
+<td>如果 BigDecimal 是正的，则做 ROUND_UP 操作；如果为负，则做 ROUND_DOWN 操作。</td>
+</tr>
+<tr>
+<td>ROUND_DOWN</td>
+<td>从不在舍弃(即截断)的小数之前增加数字。</td>
+</tr>
+<tr>
+<td>ROUND_FLOOR</td>
+<td>如果 BigDecimal 为正，则作 ROUND_UP ；如果为负，则作 ROUND_DOWN 。</td>
+</tr>
+<tr>
+<td>ROUND_HALF_DOWN</td>
+<td>若舍弃部分&gt; .5，则作 ROUND_UP；否则，作 ROUND_DOWN 。</td>
+</tr>
+<tr>
+<td>ROUND_HALF_EVEN</td>
+<td>如果舍弃部分左边的数字为奇数，则作 ROUND_HALF_UP ；如果它为偶数，则作 ROUND_HALF_DOWN 。</td>
+</tr>
+<tr>
+<td>HALF_UP</td>
+<td>若舍弃部分&gt;=.5，则作 ROUND_UP ；否则，作 ROUND_DOWN 。</td>
+</tr>
+<tr>
+<td>ROUND_UNNECESSARY</td>
+<td>该“伪舍入模式”实际是指明所要求的操作必须是精确的，，因此不需要舍入操作。</td>
+</tr>
+<tr>
+<td>ROUND_UP</td>
+<td>总是在非 0 舍弃小数(即截断)之前增加数字。</td>
+</tr>
+</tbody>
+</table>
+<h2 id="为什么要用-BigDecimal"><a href="#为什么要用-BigDecimal" class="headerlink" title="为什么要用 BigDecimal"></a>为什么要用 BigDecimal</h2><h2 id="源码"><a href="#源码" class="headerlink" title="源码"></a>源码</h2><h3 id="类说明"><a href="#类说明" class="headerlink" title="类说明"></a>类说明</h3><p>不可变的，任意精度带符号的十进制数。BigDecimal由任意精度整数非标度值(unscaledValue)和32位整数标度(scale)组成。如果是零或正数, 则标度(scale)是小数点右边的位数。如果是负数, 则这个数的非标度值(unscaledValue)乘以10的负标度 (scale) 次方。因此，BigDecimal表示的数字的值是 $(unscaledValue × 10^{-scale})$ 。</p>
+<p>BigDecimal类提供用于算术、标度(scale)操作、舍入、比较、哈希和格式转换的操作。 <code>toString()</code> 方法提供BigDecimal的规范表示。</p>
+<p>BigDecimal类让用户完全控制舍入行为。如果没有指定四舍五入模式，并且无法表示精确的结果，则抛出异常；否则，可以通过向操作提供适当的 <code>MathContext</code> 对象来按照选定的精度和舍入模式进行计算。不论发生何种情况，舍入控制采用八种舍入方式。使用该类中的Integer字段(如 <code>ROUND_HALF_UP</code>)表示舍入模式在很大程度上已经过时；应该使用 <code>RoundingMode</code> 的枚举值(例如 <code>RoundingMode.HALF_UP</code>)。</p>
+<h3 id="加法"><a href="#加法" class="headerlink" title="加法"></a>加法</h3><h3 id="减法"><a href="#减法" class="headerlink" title="减法"></a>减法</h3><h3 id="乘法"><a href="#乘法" class="headerlink" title="乘法"></a>乘法</h3><h3 id="除法"><a href="#除法" class="headerlink" title="除法"></a>除法</h3><h3 id="求平方根"><a href="#求平方根" class="headerlink" title="求平方根"></a>求平方根</h3><p>公式为：<code>x=(x+a/x)/2=r</code>，其中：<code>x</code>代表猜测数，猜测数随便取一个数，甚至可以等于<code>a</code>，<code>a</code>代表被求平方根的数，经过重复多次计算，<code>x</code>将不断接近<code>a</code>的平方根。示例如下：</p>
+<table>
+<thead>
+<tr>
+<th>计算过程</th>
+<th>结果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>(4 + 2 / 4) / 2</td>
+<td>2.25</td>
+</tr>
+<tr>
+<td>(2.25 + 2 / 2.25) / 2</td>
+<td>1.56944..</td>
+</tr>
+<tr>
+<td>(1.56944.. + 2/1.56944..) / 2</td>
+<td>1.42189..</td>
+</tr>
+<tr>
+<td>(1.42189.. + 2/1.42189..) / 2</td>
+<td>1.41423..</td>
+</tr>
+</tbody>
+</table>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> BigDecimal <span class="title">sqrt</span><span class="params">(BigDecimal value, <span class="keyword">int</span> scale)</span></span>&#123;</span><br><span class="line">    BigDecimal num2 = BigDecimal.valueOf(<span class="number">2</span>);</span><br><span class="line">    <span class="keyword">int</span> precision = <span class="number">100</span>;</span><br><span class="line">    MathContext mc = <span class="keyword">new</span> MathContext(precision, RoundingMode.HALF_UP);</span><br><span class="line">    BigDecimal deviation = value;</span><br><span class="line">    <span class="keyword">int</span> cnt = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">while</span> (cnt &lt; precision) &#123;</span><br><span class="line">        deviation = (deviation.add(value.divide(deviation, mc))).divide(num2, mc);</span><br><span class="line">        cnt++;</span><br><span class="line">    &#125;</span><br><span class="line">    deviation = deviation.setScale(scale, BigDecimal.ROUND_HALF_UP);</span><br><span class="line">    <span class="keyword">return</span> deviation;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p><strong>原文来源：</strong> CSDN用户 Override笑看人生<br><strong>原文链接：</strong> <a href="https://blog.csdn.net/rwzhang/article/details/85038627" target="_blank" rel="noopener">https://blog.csdn.net/…</a></p>
+</blockquote>
+<h3 id="格式化"><a href="#格式化" class="headerlink" title="格式化"></a>格式化</h3><h2 id="源码-1"><a href="#源码-1" class="headerlink" title="源码"></a>源码</h2>
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/blog/2019/03/18/转-Spring-Boot-2-x-启动全过程源码分析（全）/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="ty850">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/blog/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ty850 笔记">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/blog/2019/03/18/转-Spring-Boot-2-x-启动全过程源码分析（全）/" class="post-title-link" itemprop="url">[转]Spring Boot 2.x 启动全过程源码分析（全）</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-03-18 23:39:38" itemprop="dateCreated datePublished" datetime="2019-03-18T23:39:38+08:00">2019-03-18</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-03-19 00:37:41" itemprop="dateModified" datetime="2019-03-19T00:37:41+08:00">2019-03-19</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/blog/categories/技术文档/" itemprop="url" rel="index"><span itemprop="name">技术文档</span></a></span>
+
+                
+                
+                  ，
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/blog/categories/技术文档/java语言/" itemprop="url" rel="index"><span itemprop="name">java语言</span></a></span>
+
+                
+                
+                  ，
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/blog/categories/技术文档/java语言/spring组件/" itemprop="url" rel="index"><span itemprop="name">spring组件</span></a></span>
+
+                
+                
+                  ，
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/blog/categories/技术文档/java语言/spring组件/spring-boot/" itemprop="url" rel="index"><span itemprop="name">spring boot</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@SpringBootApplication</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">SpringBootBestPracticeApplication</span> </span>&#123;</span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">    SpringApplication.run(SpringBootBestPracticeApplication.class, args);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>分析SpringApplication 对象的 run 方法的源码和运行流程</p>
+<blockquote>
+<p><strong>原文作者：</strong> 微信公众号 Java技术栈<br><strong>原文链接：</strong> <a href="https://mp.weixin.qq.com/s/iMPXjuKRKT5lMZ4oVSp4Ww" target="_blank" rel="noopener">https://mp.weixin.qq.com/…</a></p>
+</blockquote>
+          <!--noindex-->
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/blog/2019/03/18/转-Spring-Boot-2-x-启动全过程源码分析（全）/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/blog/2019/03/18/spring-boot-annotation/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="ty850">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/blog/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ty850 笔记">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/blog/2019/03/18/spring-boot-annotation/" class="post-title-link" itemprop="url">[转]spring boot注解</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-03-18 15:43:12" itemprop="dateCreated datePublished" datetime="2019-03-18T15:43:12+08:00">2019-03-18</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-03-19 00:37:35" itemprop="dateModified" datetime="2019-03-19T00:37:35+08:00">2019-03-19</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/blog/categories/技术文档/" itemprop="url" rel="index"><span itemprop="name">技术文档</span></a></span>
+
+                
+                
+                  ，
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/blog/categories/技术文档/java语言/" itemprop="url" rel="index"><span itemprop="name">java语言</span></a></span>
+
+                
+                
+                  ，
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/blog/categories/技术文档/java语言/spring组件/" itemprop="url" rel="index"><span itemprop="name">spring组件</span></a></span>
+
+                
+                
+                  ，
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/blog/categories/技术文档/java语言/spring组件/spring-boot/" itemprop="url" rel="index"><span itemprop="name">spring boot</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <p>Spring Boot 最核心的注解</p>
+<blockquote>
+<p><strong>原文作者：</strong> 知乎用户 Java技术栈<br><strong>原文链接：</strong> <a href="https://zhuanlan.zhihu.com/p/57689422?utm_source=wechat_session&amp;utm_medium=social&amp;utm_oi=73532679651328" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/…</a></p>
+</blockquote>
+          <!--noindex-->
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/blog/2019/03/18/spring-boot-annotation/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
   
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
@@ -430,11 +1678,20 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/blog/2019/03/17/知识汇总/" itemprop="url">知识汇总</a></h1>
+                
+                <a href="/blog/2019/03/17/知识汇总/" class="post-title-link" itemprop="url">待读文章列表</a>
+              
+            
+          </h1>
         
 
         <div class="post-meta">
           <span class="post-time">
+
+            
+            
+            
+
             
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
@@ -442,13 +1699,30 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-03-17T16:31:57+08:00">
-                2019-03-17
-              </time>
+
+              
+                
+              
+
+              <time title="创建时间：2019-03-17 16:31:57" itemprop="dateCreated datePublished" datetime="2019-03-17T16:31:57+08:00">2019-03-17</time>
             
 
             
+              
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-03-20 11:37:41" itemprop="dateModified" datetime="2019-03-20T11:37:41+08:00">2019-03-20</time>
+              
             
           </span>
 
@@ -464,22 +1738,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/blog/categories/转载/" itemprop="url" rel="index">
-                    <span itemprop="name">转载</span>
-                  </a>
-                </span>
-
-                
-                
-                  ， 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/blog/categories/转载/技术文档/" itemprop="url" rel="index">
-                    <span itemprop="name">技术文档</span>
-                  </a>
-                </span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/blog/categories/技术文档/" itemprop="url" rel="index"><span itemprop="name">技术文档</span></a></span>
 
                 
                 
@@ -489,137 +1748,6 @@
 
           
             
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-          
- JavaGuide - 【Java学习+面试指南】 一份涵盖大部分Java程序员所需要掌握的核心知识。
- advanced-java - 互联网 Java 工程师进阶知识完全扫盲
- tutorials - spring 课程
- fescar - 分布式事务解决方案
- mall - 一套电商系统
-
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/blog/2019/03/17/知识汇总/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/blog/2019/03/16/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="ty850">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/blog/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="ty850 笔记">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/blog/2019/03/16/hello-world/" itemprop="url">Hello World</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-03-16T13:43:51+08:00">
-                2019-03-16
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
             
           
 
@@ -647,24 +1775,46 @@
       
         
           
-          Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in 
-          ...
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/blog/2019/03/16/hello-world/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
-          </div>
-          <!--/noindex-->
+            <ul>
+<li style="list-style: none"><input type="checkbox"> <a href="https://github.com/Snailclimb/JavaGuide" target="_blank" rel="noopener">JavaGuide - 【Java学习+面试指南】 一份涵盖大部分Java程序员所需要掌握的核心知识。</a></li>
+<li style="list-style: none"><input type="checkbox"> <a href="https://github.com/doocs/advanced-java" target="_blank" rel="noopener">advanced-java - 互联网 Java 工程师进阶知识完全扫盲</a></li>
+<li style="list-style: none"><input type="checkbox"> <a href="https://github.com/eugenp/tutorials" target="_blank" rel="noopener">tutorials - spring 课程</a></li>
+<li style="list-style: none"><input type="checkbox"> <a href="https://github.com/alibaba/fescar" target="_blank" rel="noopener">fescar - 分布式事务解决方案</a></li>
+<li style="list-style: none"><input type="checkbox"> <a href="https://github.com/macrozheng/mall" target="_blank" rel="noopener">mall - 一套电商系统</a></li>
+<li style="list-style: none"><input type="checkbox"> <a href="https://github.com/ityouknow/spring-boot-examples" target="_blank" rel="noopener">spring-boot-examples - Spring Boot 教程</a></li>
+<li style="list-style: none"><input type="checkbox"> <a href="http://springboot.fun/" target="_blank" rel="noopener">Spring Boot 中文索引</a></li>
+<li style="list-style: none"><input type="checkbox"> <a href="https://zhuanlan.zhihu.com/p/58536781?utm_source=wechat_session&amp;utm_medium=social&amp;utm_oi=73532679651328" target="_blank" rel="noopener">Redis缓存和MySQL数据一致性方案详解</a></li>
+<li style="list-style: none"><input type="checkbox"> <a href="https://zhuanlan.zhihu.com/p/57568995?utm_source=wechat_session&amp;utm_medium=social&amp;utm_oi=73532679651328" target="_blank" rel="noopener">用Redis轻松实现秒杀系统</a></li>
+<li style="list-style: none"><input type="checkbox"> <a href="https://zhuanlan.zhihu.com/p/54693308?utm_source=wechat_session&amp;utm_medium=social&amp;utm_oi=73532679651328" target="_blank" rel="noopener">好怕怕的类加载器</a></li>
+<li style="list-style: none"><input type="checkbox" checked> <a href="https://zhuanlan.zhihu.com/p/57689422?utm_source=wechat_session&amp;utm_medium=social&amp;utm_oi=73532679651328" target="_blank" rel="noopener">Spring Boot 最核心的 25 个注解</a></li>
+<li style="list-style: none"><input type="checkbox"> <a href="https://zhuanlan.zhihu.com/p/58331707?utm_source=wechat_session&amp;utm_medium=social&amp;utm_oi=73532679651328" target="_blank" rel="noopener">如何解决Redis雪崩、穿透、并发等5大难题</a></li>
+<li style="list-style: none"><input type="checkbox"> <a href="https://design-patterns.readthedocs.io/zh_CN/latest/index.html#" target="_blank" rel="noopener">图说设计模式</a></li>
+<li style="list-style: none"><input type="checkbox"> <a href="https://zhuanlan.zhihu.com/p/58618162?utm_source=wechat_session&amp;utm_medium=social&amp;utm_oi=73532679651328" target="_blank" rel="noopener">使用Redis中间件解决商品秒杀活动中出现的超卖问题（使用Java多线程模拟高并发环境）</a></li>
+<li style="list-style: none"><input type="checkbox"> <a href="https://github.com/dyc87112/SpringBoot-Learning" target="_blank" rel="noopener">程序猿DD SpringBoot-Learning</a></li>
+</ul>
+<h3 id="面试"><a href="#面试" class="headerlink" title="面试"></a>面试</h3><ul>
+<li style="list-style: none"><input type="checkbox"> <a href="https://zhuanlan.zhihu.com/p/58026665?utm_source=wechat_session&amp;utm_medium=social&amp;utm_oi=73532679651328" target="_blank" rel="noopener">阿里天猫团队Java研发岗技术四面:数据结构+MySQL+缓存雪崩+高并发等</a></li>
+<li style="list-style: none"><input type="checkbox"> <a href="https://zhuanlan.zhihu.com/p/57155347?utm_source=wechat_session&amp;utm_medium=social&amp;utm_oi=73532679651328" target="_blank" rel="noopener">2019蚂蚁最新面试题外泄：幻影读+分段锁+死锁+Spring Cloud+秒杀</a></li>
+<li style="list-style: none"><input type="checkbox"> <a href="https://zhuanlan.zhihu.com/p/57552093?utm_source=wechat_session&amp;utm_medium=social&amp;utm_oi=73532679651328" target="_blank" rel="noopener">BAT面试Java岗经验汇总：面试重点规划+精选面试120题+6条面试经验！</a></li>
+<li style="list-style: none"><input type="checkbox"> <a href="https://zhuanlan.zhihu.com/p/59274238?utm_source=wechat_session&amp;utm_medium=social&amp;utm_oi=73532679651328" target="_blank" rel="noopener">阿里P7给你一份超详细 Spring Boot 知识清单</a></li>
+</ul>
+
+          
         
       
     </div>
+
+    
+
     
     
     
 
     
 
+    
+      
+    
     
 
     
@@ -697,9 +1847,6 @@
           </div>
           
 
-
-          
-
         </div>
         
           
@@ -713,14 +1860,13 @@
   </div>
 
   <aside id="sidebar" class="sidebar">
-    
     <div class="sidebar-inner">
 
       
 
       
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -728,67 +1874,107 @@
               <p class="site-description motion-element" itemprop="description"></p>
           </div>
 
-          <nav class="site-state motion-element">
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/blog/archives/">
+                
+                    <span class="site-state-item-count">8</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
 
-            
-              <div class="site-state-item site-state-posts">
               
-                <a href="/blog/archives/">
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/blog/categories/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">6</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
               
-                  <span class="site-state-item-count">3</span>
-                  <span class="site-state-item-name">日志</span>
-                </a>
-              </div>
-            
 
-            
               
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/blog/tags/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">3</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
               
-              <div class="site-state-item site-state-categories">
-                <a href="/blog/categories/index.html">
-                  <span class="site-state-item-count">2</span>
-                  <span class="site-state-item-name">分类</span>
-                </a>
-              </div>
-            
-
-            
-              
-              
-              <div class="site-state-item site-state-tags">
-                <a href="/blog/tags/index.html">
-                  <span class="site-state-item-count">3</span>
-                  <span class="site-state-item-name">标签</span>
-                </a>
-              </div>
-            
-
-          </nav>
+            </nav>
+          
 
           
 
           
             <div class="links-of-author motion-element">
-                
-                  <span class="links-of-author-item">
-                    <a href="https://github.com/ty850454" target="_blank" title="GitHub">
-                      
-                        <i class="fa fa-fw fa-github"></i>GitHub</a>
-                  </span>
-                
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://github.com/ty850454" title="GitHub &rarr; https://github.com/ty850454" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="mailto:ty850454@126.com" title="E-Mail &rarr; mailto:ty850454@126.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                </span>
+              
             </div>
           
 
           
-          
 
           
           
 
+          
+            
+          
           
 
         </div>
-      </section>
+      </div>
 
       
 
@@ -796,6 +1982,7 @@
 
     </div>
   </aside>
+  
 
 
         
@@ -805,16 +1992,18 @@
     <footer id="footer" class="footer">
       <div class="footer-inner">
         <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
-  <span class="with-love">
+  <span class="with-love" id="animate">
     <i class="fa fa-user"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">ty850</span>
 
   
+
+  
 </div>
 
 
-  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+  <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v3.8.0</div>
 
 
 
@@ -822,12 +2011,13 @@
 
 
 
-  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
+  <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> v7.0.1</div>
 
 
 
 
         
+
 
 
 
@@ -843,16 +2033,21 @@
       <div class="back-to-top">
         <i class="fa fa-arrow-up"></i>
         
+          <span id="scrollpercent"><span>0</span>%</span>
+        
       </div>
     
 
     
 
+    
+
+    
   </div>
 
   
 
-<script type="text/javascript">
+<script>
   if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
     window.Promise = null;
   }
@@ -866,106 +2061,11 @@
 
 
 
-  
-
-
-  
 
 
 
 
 
-
-
-
-
-
-
-  
-  
-    <script type="text/javascript" src="/blog/lib/jquery/index.js?v=2.1.3"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/blog/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/blog/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/blog/lib/velocity/velocity.min.js?v=1.2.1"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/blog/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/blog/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/blog/lib/canvas-nest/canvas-nest.min.js"></script>
-  
-
-
-  
-
-
-  <script type="text/javascript" src="/blog/js/src/utils.js?v=5.1.4"></script>
-
-  <script type="text/javascript" src="/blog/js/src/motion.js?v=5.1.4"></script>
-
-
-
-  
-  
-
-
-  <script type="text/javascript" src="/blog/js/src/affix.js?v=5.1.4"></script>
-
-  <script type="text/javascript" src="/blog/js/src/schemes/pisces.js?v=5.1.4"></script>
-
-
-
-  
-
-  
-
-
-  <script type="text/javascript" src="/blog/js/src/bootstrap.js?v=5.1.4"></script>
-
-
-
-  
-
-
-  
-
-
-
-
-	
-
-
-
-
-
-  
-
-
-
-
-
-  
 
 
 
@@ -979,7 +2079,48 @@
 
 
   
+  <script src="/blog/lib/jquery/index.js?v=2.1.3"></script>
 
+  
+  <script src="/blog/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script src="/blog/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+
+  
+
+
+  <script src="/blog/js/src/utils.js?v=7.0.1"></script>
+
+  <script src="/blog/js/src/motion.js?v=7.0.1"></script>
+
+
+
+  
+  
+
+
+  <script src="/blog/js/src/affix.js?v=7.0.1"></script>
+
+  <script src="/blog/js/src/schemes/pisces.js?v=7.0.1"></script>
+
+
+
+  
+
+  
+
+
+  <script src="/blog/js/src/bootstrap.js?v=7.0.1"></script>
+
+
+  
+  
+
+
+
+  
 
 
 
@@ -989,8 +2130,93 @@
   
 
   
+  
 
   
+  
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        
+      
+    
+      
+    
+      
+    
+      
+    
+  
+
+  
+    
+      <script type="text/x-mathjax-config">
+  
+
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$', '$'], ['\\(', '\\)'] ],
+      processEscapes: true,
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    },
+    TeX: {
+      
+      equationNumbers: {
+        autoNumber: 'AMS'
+      }
+    }
+  });
+  MathJax.Hub.Register.StartupHook('TeX Jax Ready', function() {
+    MathJax.InputJax.TeX.prefilterHooks.Add(function(data) {
+      if (data.display) {
+        var next = data.script.nextSibling;
+        while (next && next.nodeName.toLowerCase() === '#text') { next = next.nextSibling }
+        if (next && next.nodeName.toLowerCase() === 'br') { next.parentNode.removeChild(next) }
+      }
+    });
+  });
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+      for (i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+      }
+  });
+</script>
+<script src="//cdn.jsdelivr.net/npm/mathjax@2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<style>
+.MathJax_Display {
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+</style>
+
+    
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
   
 
   
