@@ -104,7 +104,7 @@
 <meta property="og:site_name" content="ty850 笔记">
 <meta property="og:description" content="介绍快速开始1234567891011121314BigDecimal bigDecimal1 = new BigDecimal(1);BigDecimal bigDecimal2 = new BigDecimal(2);// 加法 bigDecimal1.add(bigDecimal2)System.out.println(bigDecimal1.add(bigDecimal2));// 减法">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-03-20T03:06:04.702Z">
+<meta property="og:updated_time" content="2019-03-28T11:08:00.921Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="BigDecimal">
 <meta name="twitter:description" content="介绍快速开始1234567891011121314BigDecimal bigDecimal1 = new BigDecimal(1);BigDecimal bigDecimal2 = new BigDecimal(2);// 加法 bigDecimal1.add(bigDecimal2)System.out.println(bigDecimal1.add(bigDecimal2));// 减法">
@@ -386,7 +386,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-03-20 11:06:04" itemprop="dateModified" datetime="2019-03-20T11:06:04+08:00">2019-03-20</time>
+                <time title="修改时间：2019-03-28 19:08:00" itemprop="dateModified" datetime="2019-03-28T19:08:00+08:00">2019-03-28</time>
               
             
           </span>
@@ -499,7 +499,7 @@
 <h2 id="为什么要用-BigDecimal"><a href="#为什么要用-BigDecimal" class="headerlink" title="为什么要用 BigDecimal"></a>为什么要用 BigDecimal</h2><h2 id="源码"><a href="#源码" class="headerlink" title="源码"></a>源码</h2><h3 id="类说明"><a href="#类说明" class="headerlink" title="类说明"></a>类说明</h3><p>不可变的，任意精度带符号的十进制数。BigDecimal由任意精度整数非标度值(unscaledValue)和32位整数标度(scale)组成。如果是零或正数, 则标度(scale)是小数点右边的位数。如果是负数, 则这个数的非标度值(unscaledValue)乘以10的负标度 (scale) 次方。因此，BigDecimal表示的数字的值是 $(unscaledValue × 10^{-scale})$ 。</p>
 <p>BigDecimal类提供用于算术、标度(scale)操作、舍入、比较、哈希和格式转换的操作。 <code>toString()</code> 方法提供BigDecimal的规范表示。</p>
 <p>BigDecimal类让用户完全控制舍入行为。如果没有指定四舍五入模式，并且无法表示精确的结果，则抛出异常；否则，可以通过向操作提供适当的 <code>MathContext</code> 对象来按照选定的精度和舍入模式进行计算。不论发生何种情况，舍入控制采用八种舍入方式。使用该类中的Integer字段(如 <code>ROUND_HALF_UP</code>)表示舍入模式在很大程度上已经过时；应该使用 <code>RoundingMode</code> 的枚举值(例如 <code>RoundingMode.HALF_UP</code>)。</p>
-<h3 id="加法"><a href="#加法" class="headerlink" title="加法"></a>加法</h3><h3 id="减法"><a href="#减法" class="headerlink" title="减法"></a>减法</h3><h3 id="乘法"><a href="#乘法" class="headerlink" title="乘法"></a>乘法</h3><h3 id="除法"><a href="#除法" class="headerlink" title="除法"></a>除法</h3><h3 id="求平方根"><a href="#求平方根" class="headerlink" title="求平方根"></a>求平方根</h3><p>公式为：<code>x=(x+a/x)/2=r</code>，其中：<code>x</code>代表猜测数，猜测数随便取一个数，甚至可以等于<code>a</code>，<code>a</code>代表被求平方根的数，经过重复多次计算，<code>x</code>将不断接近<code>a</code>的平方根。示例如下：</p>
+<h3 id="属性"><a href="#属性" class="headerlink" title="属性"></a>属性</h3><h3 id="构造"><a href="#构造" class="headerlink" title="构造"></a>构造</h3><h3 id="加法"><a href="#加法" class="headerlink" title="加法"></a>加法</h3><h3 id="减法"><a href="#减法" class="headerlink" title="减法"></a>减法</h3><h3 id="乘法"><a href="#乘法" class="headerlink" title="乘法"></a>乘法</h3><h3 id="除法"><a href="#除法" class="headerlink" title="除法"></a>除法</h3><h3 id="求平方根"><a href="#求平方根" class="headerlink" title="求平方根"></a>求平方根</h3><p>公式为：<code>x=(x+a/x)/2=r</code>，其中：<code>x</code>代表猜测数，猜测数随便取一个数，甚至可以等于<code>a</code>，<code>a</code>代表被求平方根的数，经过重复多次计算，<code>x</code>将不断接近<code>a</code>的平方根。示例如下：</p>
 <table>
 <thead>
 <tr>
@@ -646,7 +646,7 @@
                 
                   <a href="/blog/archives/">
                 
-                    <span class="site-state-item-count">8</span>
+                    <span class="site-state-item-count">9</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -669,9 +669,7 @@
                     
                       
                     
-                      
-                    
-                    <span class="site-state-item-count">6</span>
+                    <span class="site-state-item-count">5</span>
                     <span class="site-state-item-name">分类</span>
                   </a>
                 </div>
@@ -752,7 +750,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#介绍"><span class="nav-number">1.</span> <span class="nav-text">介绍</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#快速开始"><span class="nav-number">2.</span> <span class="nav-text">快速开始</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#RoundingMode"><span class="nav-number">2.0.1.</span> <span class="nav-text">RoundingMode</span></a></li></ol></li></ol><li class="nav-item nav-level-2"><a class="nav-link" href="#为什么要用-BigDecimal"><span class="nav-number">3.</span> <span class="nav-text">为什么要用 BigDecimal</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#源码"><span class="nav-number">4.</span> <span class="nav-text">源码</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#类说明"><span class="nav-number">4.1.</span> <span class="nav-text">类说明</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#加法"><span class="nav-number">4.2.</span> <span class="nav-text">加法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#减法"><span class="nav-number">4.3.</span> <span class="nav-text">减法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#乘法"><span class="nav-number">4.4.</span> <span class="nav-text">乘法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#除法"><span class="nav-number">4.5.</span> <span class="nav-text">除法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#求平方根"><span class="nav-number">4.6.</span> <span class="nav-text">求平方根</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#格式化"><span class="nav-number">4.7.</span> <span class="nav-text">格式化</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#源码-1"><span class="nav-number">5.</span> <span class="nav-text">源码</span></a></li></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#介绍"><span class="nav-number">1.</span> <span class="nav-text">介绍</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#快速开始"><span class="nav-number">2.</span> <span class="nav-text">快速开始</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#RoundingMode"><span class="nav-number">2.0.1.</span> <span class="nav-text">RoundingMode</span></a></li></ol></li></ol><li class="nav-item nav-level-2"><a class="nav-link" href="#为什么要用-BigDecimal"><span class="nav-number">3.</span> <span class="nav-text">为什么要用 BigDecimal</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#源码"><span class="nav-number">4.</span> <span class="nav-text">源码</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#类说明"><span class="nav-number">4.1.</span> <span class="nav-text">类说明</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#属性"><span class="nav-number">4.2.</span> <span class="nav-text">属性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#构造"><span class="nav-number">4.3.</span> <span class="nav-text">构造</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#加法"><span class="nav-number">4.4.</span> <span class="nav-text">加法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#减法"><span class="nav-number">4.5.</span> <span class="nav-text">减法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#乘法"><span class="nav-number">4.6.</span> <span class="nav-text">乘法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#除法"><span class="nav-number">4.7.</span> <span class="nav-text">除法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#求平方根"><span class="nav-number">4.8.</span> <span class="nav-text">求平方根</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#格式化"><span class="nav-number">4.9.</span> <span class="nav-text">格式化</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#源码-1"><span class="nav-number">5.</span> <span class="nav-text">源码</span></a></li></div>
             
 
           </div>
